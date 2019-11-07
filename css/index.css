@@ -265,3 +265,12 @@ header .fixed .navbar nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  width: 82%;
+  background: #17A2B8;
+  color: #FFFFFF;
+  font-size: 2rem;
+  text-align: center;
+  padding: 5%;
+  border-radius: 12px;
+}
