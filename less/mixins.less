@@ -31,3 +31,15 @@
     -o-animation: @fadeInSettings;
     -ms-animation: @fadeInSettings;
 }
+
+.fadeInKeyframes(@name, @rules) {
+    @keyframes @name {@rules();}
+    
+    @-moz-keyframes @name {@rules();}
+    
+    @-webkit-keyframes @name {@rules();}
+    
+    @-o-keyframes @name {@rules();}
+    
+    @-ms-keyframes @name {@rules();}
+}

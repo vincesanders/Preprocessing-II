@@ -12,20 +12,19 @@
       .fadeInAnimation();
     } 
     
-    @keyframes fadeIn {@opacityKeyframes}
-    
-    @-moz-keyframes fadeIn {@opacityKeyframes}
-    
-    @-webkit-keyframes fadeIn {@opacityKeyframes}
-    
-    @-o-keyframes fadeIn {@opacityKeyframes}
-    
-    @-ms-keyframes fadeIn {@opacityKeyframes}
+    .fadeInKeyframes(fadeIn, {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    });
 
     @media @mobile {
       .displayFlex(center, column);
       align-items: center;
-      margin-top: 18%;
+      margin-top: 19%;
 
       img {
         width: @mobileContainerWidth;
