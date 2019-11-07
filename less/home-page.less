@@ -103,5 +103,15 @@
         .sign-up-button();
       }
     }
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+      .destination {
+        width: @mobileContainerWidth - 15%;
+        .btn {
+          width: 100%;
+        }
+      }
+    }
   }
 }// home
