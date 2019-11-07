@@ -24,6 +24,18 @@ header {
                     font-size: 1.6rem;
                 }
             }
-        }
-    }
-}
+            @media @mobile {
+               flex-wrap: wrap; 
+               .logo {
+                   width: 100%;
+                   text-align: center;
+                   margin: 2% 0;
+               }
+               nav {
+                    width: 100%;
+                    margin-top: 1%;
+               }
+            }
+        }//Ends .navbar
+    }//Ends .fixed
+}//Ends header
