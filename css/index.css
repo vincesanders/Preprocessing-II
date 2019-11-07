@@ -168,6 +168,38 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+header .fixed {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 2px dashed #C0C0C0;
+}
+header .fixed .navbar {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 0;
+}
+header .fixed .navbar nav {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: flex-end;
+}
+header .fixed .navbar nav a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.6rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
