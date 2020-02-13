@@ -1,1 +1,45 @@
 // Mixins in here
+.center() {
+    margin: 0 auto;
+}
+.displayFlex(@justify) {
+    display: flex;
+    justify-content: @justify;
+}
+
+.displayFlex(@justify, @direction) {
+    display: flex;
+    justify-content: @justify;
+    flex-direction: @direction;
+}
+
+.sign-up-button(@width: 82%) {
+    width: @width;
+    background: @button-bg;
+    color: @white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 5%;
+    border-radius: 18px;
+}
+
+//animations
+.fadeInAnimation() {
+    animation: @fadeInSettings;
+    -webkit-animation: @fadeInSettings;
+    -moz-animation: @fadeInSettings;
+    -o-animation: @fadeInSettings;
+    -ms-animation: @fadeInSettings;
+}
+
+.fadeInKeyframes(@name, @rules) {
+    @keyframes @name {@rules();}
+    
+    @-moz-keyframes @name {@rules();}
+    
+    @-webkit-keyframes @name {@rules();}
+    
+    @-o-keyframes @name {@rules();}
+    
+    @-ms-keyframes @name {@rules();}
+}
